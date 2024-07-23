@@ -1,0 +1,126 @@
+<html>
+
+<head>
+
+	<title>Staking Reward</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+	<script src="https://kit.fontawesome.com/9b225d1b60.js" crossorigin="anonymous"></script>
+
+	<body>
+
+		<!-- <i class="fa-solid fa-chart-simple"></i> -->
+
+		<div class="wrapper">
+			<div class="sidebar">
+				<h2>
+					<i class="fa-solid fa-chart-simple"></i> Trackate
+				</h2>
+				<ul>
+					<li><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+					<li><a href="#"><i class="fa-solid fa-chart-line"></i>Charts</a></li>
+					<li><a href="#"><i class="fa-solid fa-chart-line"></i>Portfolio</a></li>
+					<li><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+					<li><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+					<li><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+					<li><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+				</ul>
+
+				<div class="social_media">
+					<a href="#"><i class="fa-brands fa-twitter"></i></a>
+					<a href="#"><i class="fa-brands fa-discord"></i></a>
+					<a href="#"><i class="fa-solid fa-globe"></i></a>
+				</div>
+			</div>
+		</div>
+
+		<section class="Top-Bar">
+			<h1 id="Titre">Dashboard</h1>
+			<a href="https://moonroll.io/r/gg" id="Moonroll"><button><p>Add Transaction</p></button></a>
+		</section>
+
+		<div class="Home" id="Home">
+
+			<div class="cards">
+
+				<div class="card">
+					<div class="card-content">
+						<div class="value">95,364</div>
+						<div class="currency">MRC Holdings</div>
+					</div>
+					<div class="icon-box">
+						<i class="fa-solid fa-wallet" id="Logo"></i>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-content">
+						<div class="value">$141</div>
+						<div class="currency">Total Invested</div>
+					</div>
+					<div class="icon-box">
+						<i class="fa-solid fa-money-bill"></i>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-content">
+						<div class="value">$0</div>
+						<div class="currency">Lottery Winnings</div>
+					</div>
+					<div class="icon-box">
+						<i class="fa-solid fa-clover"></i>
+					</div>
+				</div>
+
+			</div>
+
+			<!-- Navigation Menu for different charts -->
+			<div class="Nav-Charts">
+				<a href="#"><button>Portfolio</button></a>
+				<a href="#"><button>MRC Holdings</button></a>
+				<a href="#"><button>NFTs</button></a>
+				<a href="#"><button>Winnings</button></a>
+				<a href="#"><button>Lottery</button></a>
+			</div>
+
+			<!-- Charts Area -->
+			<div class="chart-container">
+				<canvas id="myChart" style="width:100%"></canvas>
+			</div>
+
+		</div>
+
+		<script>
+			const xValues = [1];
+			const yValues = [95637];
+			
+			new Chart("myChart", {
+			  type: "line",
+			  data: {
+				labels: xValues,
+				datasets: [{
+				  fill: true,
+				  lineTension: 0,
+				  backgroundColor: "#3f5efb5d",
+				  borderColor: "#3F5EFB",
+				  data: yValues
+				}]
+			  },
+			  options: {
+				legend: {display: false},
+				scales: {
+				  yAxes: [{ticks: {min: 1, max:500000}}],
+				}
+			  }
+			});
+			</script>
+
+
+	</body>
+
+</head>
+
+</html>

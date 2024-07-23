@@ -1,0 +1,321 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+/* All */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* Body */
+body {
+	font-family: "Poppins", sans-serif;
+	background: #ffffff;
+}
+
+/* Landing Page */
+.Banner {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+	height: 60vh;
+	background: url("/Blog/Images/blob-scene-haikei.svg") no-repeat;
+    background-position: center;
+    background-size: cover;
+	box-shadow: 0 0 5px -2px hsla(0, 0%, 0%, 0.8);
+	color: white;
+}
+
+.Banner > #Welcome {
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	transform: translate(-50%,-50%);	
+	font-size: 75px;
+}
+
+.Banner > #Title {
+	position: absolute;
+	top: 38%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 27px;
+}
+
+.Banner > #desc {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 18px;
+	text-align: center;
+	color: #bdc3c7;
+}
+
+.Banner > a > #Launch {
+	position: absolute;
+	top: 85%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	padding: 15px 30px;
+	background: #8E2DE2;
+	color: white;
+	font-size: 18px;
+	cursor: pointer;
+	box-shadow: 0 0 5px -2px hsla(0, 0%, 0%, 0.5);
+}
+.Banner > a > #Launch:hover {background: #8414e6;}
+
+/* Home Page */
+.Home {
+	position: absolute;
+	top: 54%;
+	left: 57.1%;
+	transform: translate(-50%,-50%);
+	width: calc(100% - 200px);
+	height: calc(100vh - 65px);
+	background: #f5f5f5;
+}
+
+.Top-Bar {
+	width: 85.5%;
+	height: 65px;
+	background: #fff;
+	margin-left: 200px;
+	position: absolute;
+	top: 0;
+}
+
+/* Top Bar */
+.Top-Bar > #Titre {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 25px;
+}
+
+.Top-Bar > #Moonroll > button {
+	position: relative;
+	top: 50%;
+	left: 90%;
+	transform: translate(-50%,-50%);
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	background: #3F5EFB;
+
+	padding: 13px 20px;
+	font-size: 15px;
+	font-family: "Poppins", sans-serif;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+	box-shadow: 0 0 5px -2px hsla(0, 0%, 0%, 0.4);
+}
+.Top-Bar > #Moonroll > button:hover {background: #2f4fed}
+.Top-Bar > #Moonroll > button > p > img {
+	width: 30px;
+}
+
+/* Navigation Bar */
+.wrapper {
+	display: flex;
+	position: relative;
+}
+.wrapper > .sidebar {
+	position: fixed;
+	width: 200px;
+	height: 100%;
+	background-color: #222222;
+	padding: 30px 0;
+}
+.wrapper > .sidebar > h2 {
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.wrapper > .sidebar > h2 > i {width: 25px; color: #3F5EFB;}
+.wrapper > .sidebar > ul > li {
+	padding: 15px;
+	border-bottom: 1px solid rgba(0,0,0,0.05);
+	border-top: 1px solid rgba(225,225,225,0.05);
+}
+.wrapper > .sidebar > ul > li > a {
+	color: #fff;
+	display: block;
+	text-decoration: none;
+}
+.wrapper > .sidebar > ul > li > a > .fa-solid {
+	width: 35px;
+	color: #fff;
+}
+.wrapper > .sidebar > ul > li:hover {background: #161616;}
+.wrapper > .sidebar > ul > li:hover a {color: #fff;}
+
+.wrapper > .sidebar > .social_media {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%);
+	display: flex;
+}
+.wrapper > .sidebar > .social_media > a {
+	display: block;
+	width: 40px;
+	background: #161616;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	margin: 10 5px;
+	color: #fff;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+.wrapper > .sidebar > .social_media > a > i {position: absolute; top: 40%; transform: translate(-50%);}
+
+/* Stats */
+.cards {
+	width: 100%;
+	padding: 35px 20px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+}
+.cards > .card {
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 5px -2px hsla(0, 0%, 0%, 0.2);
+}
+.cards > .card > .card-content > .value {
+	font-size: 35px;
+	font-weight: 500;
+	color: #3F5EFB;
+}
+.cards > .card > .card-content > .currency {
+	color: #888;
+	font-weight: 600;
+}
+.Cards > .card > .icon-box > i {
+	font-size: 45px;
+}
+
+
+	/* Nav-Charts */
+.Nav-Charts {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	position: absolute;
+	top: 30%;
+	left: 23%;
+	transform: translate(-50%,-50%);
+}
+.Nav-Charts > a {text-decoration: none;}
+.Nav-Charts > a > button {
+	outline: none;
+	border: none;
+	border-radius: 25px;
+	background: #222222;
+	padding: 10px 20px;
+	font-size: 12px;
+	font-family: "Poppins", sans-serif;
+	color: white;
+	box-shadow: 0 0 5px -2px hsla(0, 0%, 0%, 0.4);
+	cursor: pointer;
+	transition: 200ms;
+}
+.Nav-Charts > a > button:hover {transform: scale(1.02); background: #121212;}
+
+
+.chart-container {
+	position: absolute;
+	top: 65%;
+	left: 40%;
+	transform: translate(-50%,-50%);
+	color: #3f5efb5d;
+	width: 75%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .Flex-Cards {
+	position: absolute;
+	top: 18%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+	width: 1148px;
+	height: 30vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+	color: #222222;
+}
+
+.Flex-Cards > div {
+	width: 28%;
+	height: 150px;
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 0 7px 25px 0 rgab(0, 0, 0, 0.09)
+} 
+
+.Flex-Cards > div > #Title {
+	font-size: 20px;
+	margin-top: 5px;
+	margin-left: 10px;
+}
+.Flex-Cards > div > #Logo {
+	font-size: 50px;
+	color: #222222;
+}
+
+.Flex-Cards > div > h4 {
+	font-size: 20px;
+	width: 150px;
+}
+
+.Flex-Cards > div > #UpDown {
+	font-size: 16px;
+}
+.Flex-Cards > div > #UpDown > #Up {color: #04bb22;}
+.Flex-Cards > div > #UpDown > #Down {color: #ed0200;}
+
+.Flex-Cards > div > #Details {
+	font-size: 13px;
+	color: #c1c1c1;
+	text-decoration: none;
+	border-bottom: 1px solid #c1c1c1;
+} */
